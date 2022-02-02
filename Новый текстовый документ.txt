@@ -1,0 +1,25 @@
+import React, { useEffect, useState } from "react";
+
+function Achievements() {
+
+  const [profile, SetProfile] = useState('');
+  
+  useEffect(async() => {
+
+    let response = await fetch('https://jsonplaceholder.typicode.com/users');
+
+    let text = await response.json();
+
+    SetProfile(text.map(information => 
+      <h3 key={information.id}>Name: {information.name}</h3>
+    ));
+  });
+
+  return (
+    <div className="profiles">
+      {profile}
+    </div>
+  );
+}
+
+export default Achievements
