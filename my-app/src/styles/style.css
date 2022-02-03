@@ -1,0 +1,94 @@
+.block {
+    border-radius: 10px;
+    background-color: rgb(233, 231, 230);
+    width: 600px;
+    margin: 30px;
+    padding: 4px 10px;
+}
+
+.Block {
+    width: 700px;
+    display: inline-block;
+    background-color: white;
+}
+
+.Profile {
+    width: 600px;
+    margin: auto;
+}
+
+
+nav, .last {
+    display: inline;
+}
+
+nav {
+    float: right;
+    margin-right: 30px;
+}
+
+.Profile {
+    border: bisque 2px solid;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.buttons {
+    display: inline-block;
+    width: 200px;
+    vertical-align:top;
+    height: 100%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 30px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px ;
+}
+
+.comments {
+    background-color: rgb(172, 168, 165);
+}
+
+h2 {
+    margin: 10px 35px;
+}
+
+.userprofile, .Edit {
+    display: inline;
+    
+} 
+
+.container {
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.full {
+    background-color: rgb(172, 168, 165);;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+input {
+    margin: 10px 0;
+    width: 40%;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.comment {
+    height: 70px;
+    width: 90%;
+}

@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import Cards_container from "./Components/Cards_container";
-import Taimer from "./Components/Taimer";
-import Achievements from "./Components/Achievements";
 import './styles/style.css';
+import Comment from './Components/Comment.jsx'
+import Profile from './Components/Profile.jsx'
+import { BrowserRouter, Routes ,Route } from 'react-router-dom';
+
 
 function App() {
 
   return (
-    <div className="App">
-      <Cards_container/>
-      <Taimer/>
-      <Achievements/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Comment/>} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/profile/:id" element={<Profile/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
